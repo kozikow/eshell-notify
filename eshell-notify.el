@@ -30,9 +30,18 @@
 ;; is doing - for example eshell-compilation , eshell-tests or
 ;; eshell-mapreduce
 ;;
+;; Some tips:
 ;; By default notify.el have minimum 5 seconds delay between messages.
 ;; If you want to disable it (I did) run (setq notify-delay '(0 0 0))
+;; For Mac:
+;; Install growlnotify from http://growl.info/downloads
+;; For Ubuntu:
+;; If you use mutiple monitors and want to have notifications sent to the
+;; active one run following command:
+;; gsettings set com.canonical.notify-osd multihead-mode focus-follow
 ;;; Code:
+(require 'eshell)
+(require 'notify)
 
 (defvar eshell-notify-buffer-to-time-hash-list
   (make-hash-table :test 'equal)
