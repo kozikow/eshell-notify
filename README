@@ -1,1 +1,3 @@
 This plugin hooks into eshell mode to provide system notifications about finished commands that took longer than eshell-notify-minimum-threshold-seconds .
+
+For example you may have different eshell buffers named "eshell-tests" , "eshell-compilation" , "eshell-datapipeline" and when some long eshell command finishes in any of these buffers you will get a desktop notification via notify.el.
