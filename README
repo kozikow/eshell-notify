@@ -1,0 +1,1 @@
+This plugin hooks into eshell mode to provide system notifications about finished commands that took longer than eshell-notify-minimum-threshold-seconds .
