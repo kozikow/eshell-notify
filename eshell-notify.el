@@ -40,7 +40,7 @@
 Hash key is a name of a buffer. Hash value is a result of float-time at the 
 start of the last eshell command in that buffer")
 
-(defvar eshell-notify-minimum-threshold-seconds 6)
+(defvar eshell-notify-minimum-threshold-seconds 10)
 
 (defvar eshell-notify-message-title "Command finished")
 
