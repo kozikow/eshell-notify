@@ -85,4 +85,9 @@ start of the last eshell command in that buffer")
 (add-hook 'eshell-pre-command-hook 'eshell-record-last-command-time)
 (add-hook 'eshell-post-command-hook 'eshell-maybe-notify)
 
+;;;; Provide
+
+(provide 'eshell-notify)
+
 ;;; eshell-notify.el ends here
+
