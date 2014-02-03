@@ -82,8 +82,6 @@ start of the last eshell command in that buffer")
    (float-time)
    eshell-notify-buffer-to-time-hash-list))
 
-;;;###autoload
-
 (add-hook 'eshell-pre-command-hook 'eshell-record-last-command-time)
 (add-hook 'eshell-post-command-hook 'eshell-maybe-notify)
 
